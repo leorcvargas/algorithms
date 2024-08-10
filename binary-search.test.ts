@@ -16,7 +16,7 @@ describe('binary search', () => {
       });
     });
 
-    const shoulReturnNullTestCases = [-1000, 0, 1234934, 439508403, -1];
+    const shoulReturnNullTestCases = [-1000, 0, 10001, 1234934, 439508403, -1];
     shoulReturnNullTestCases.forEach((tC) => {
       test(`should return null for ${tC}`, () => {
         const result = binarySearch(tC, arr);
