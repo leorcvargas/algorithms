@@ -18,7 +18,7 @@ const binarySearch = (item: number, list: number[]) => {
     }
   }
 
-  return null;
+  return -1;
 };
 
 export { binarySearch };
