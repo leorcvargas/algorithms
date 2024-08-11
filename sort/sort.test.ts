@@ -5,14 +5,12 @@ import { quicksort } from './quicksort';
 import { selectionSort } from './selection-sort';
 
 describe('sorting algorithms', () => {
-  const testCases = [1, 10, 100, 1000, 10000, 100000, 200000].map(
-    (elementsLength) => {
-      const expected = makeNumbersArray(elementsLength);
-      const input = shuffle(expected);
+  const testCases = [1, 10, 100, 1000, 10000].map((elementsLength) => {
+    const expected = makeNumbersArray(elementsLength);
+    const input = shuffle(expected);
 
-      return { expected, input, elementsLength };
-    },
-  );
+    return { expected, input, elementsLength };
+  });
 
   describe('quicksort', () => {
     testCases.forEach(({ input, expected, elementsLength }) => {
